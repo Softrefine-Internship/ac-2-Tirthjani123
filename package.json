@@ -1,0 +1,17 @@
+{
+  "name": "test-4",
+  "version": "1.0.0",
+  "description": "test-4",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css -w",
+    "concat:css": "concat -o css/style.concat.css css/style.comp.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "concat": "^1.0.3"
+  }
+}

@@ -1,0 +1,93 @@
+.navigation {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .navigation__logo {
+    justify-content: start;
+    cursor: pointer;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 1px solid #c8c8c8;
+    position: relative; }
+    .navigation__logo img {
+      height: 10rem;
+      width: 10rem;
+      transition: all 0.3s ease; }
+      .navigation__logo img:hover {
+        transform: scale(1.05); }
+  .navigation__links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .navigation__links__svg {
+      height: 3rem;
+      width: 3rem;
+      margin: 2rem 0;
+      stroke-width: 1px;
+      transition: all 0.3s ease; }
+      .navigation__links__svg:hover {
+        transform: scale(1.1); }
+    .navigation__links .container {
+      width: 100%;
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease; }
+      .navigation__links .container:hover {
+        background-color: #FCE6BD; }
+        .navigation__links .container:hover .navigation__links__svg {
+          color: #F0894D; }
+    .navigation__links__home, .navigation__links__calender, .navigation__links__users, .navigation__links__clock, .navigation__links__checkbox {
+      transition: all 0.3s ease; }
+  .navigation__help {
+    margin: 2rem 0;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    color: #F2ECE2;
+    background-color: #111111;
+    border-radius: 100%;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+    transition: all 0.3s ease; }
+    .navigation__help:hover {
+      transform: scale(1.1);
+      background-color: #373737;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+
+body {
+  background-color: #FCE6BD; }
+
+.dashboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FCE6BD;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr;
+  height: 98vh;
+  width: 98vw;
+  border-radius: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }

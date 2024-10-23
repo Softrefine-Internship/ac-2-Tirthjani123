@@ -1,0 +1,17 @@
+body {
+  background-color: $secondary;
+}
+.dashboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:$secondary;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr;
+  height: 98vh;
+  width: 98vw;
+  border-radius: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

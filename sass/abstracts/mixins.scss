@@ -1,0 +1,43 @@
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == 29 {
+    @media (max-width: 29em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 37.5 {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 48 {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 56.25 {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 63 {
+    @media (max-width: 65em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 75 {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 95.25 {
+    @media (max-width: 95.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 112.5 {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
