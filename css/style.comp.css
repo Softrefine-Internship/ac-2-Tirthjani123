@@ -1,5 +1,5 @@
 .navigation {
-  background-color: #fff;
+  background-color: #FCFCFC;
   height: 100%;
   display: flex;
   flex-direction: column; }
@@ -24,14 +24,20 @@
     justify-content: center;
     align-items: center;
     width: 100%; }
+    .navigation__links .container1 {
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      background-color: #f2ebe1; }
+      .navigation__links .container1 .navigation__links__home {
+        transform: scale(1.1);
+        stroke-width: 1.5px; }
     .navigation__links__svg {
       height: 3rem;
       width: 3rem;
       margin: 2rem 0;
       stroke-width: 1px;
       transition: all 0.3s ease; }
-      .navigation__links__svg:hover {
-        transform: scale(1.1); }
     .navigation__links .container {
       width: 100%;
       cursor: pointer;
@@ -39,10 +45,11 @@
       display: block;
       transition: all 0.3s ease; }
       .navigation__links .container:hover {
-        background-color: #FCE6BD; }
+        background-color: rgba(242, 235, 225, 0.6); }
         .navigation__links .container:hover .navigation__links__svg {
-          color: #F0894D; }
-    .navigation__links__home, .navigation__links__calender, .navigation__links__users, .navigation__links__clock, .navigation__links__checkbox {
+          transform: scale(1.1);
+          stroke-width: 1.5px; }
+    .navigation__links__calender, .navigation__links__users, .navigation__links__clock, .navigation__links__checkbox {
       transition: all 0.3s ease; }
   .navigation__help {
     margin: 2rem 0;
@@ -52,7 +59,7 @@
     align-items: center;
     width: 5rem;
     height: 5rem;
-    color: #F2ECE2;
+    color: #FCFCFC;
     background-color: #111111;
     border-radius: 100%;
     cursor: pointer;
@@ -64,18 +71,33 @@
       background-color: #373737;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
+.file-section__logo {
+  height: 10.8rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+  justify-content: center;
+  border-bottom: 1px solid #c8c8c8; }
+  .file-section__logo__name {
+    line-height: 1.5;
+    font-size: x-large;
+    font-weight: 900; }
+  .file-section__logo__subname {
+    line-height: 1.5;
+    font-size: small;
+    font-weight: 500; }
+
 body {
-  background-color: #FCE6BD; }
+  background-color: #F2EBE1; }
 
 .dashboard {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #FCE6BD;
   display: grid;
   overflow: hidden;
-  grid-template-columns: 0.1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.1fr .6fr 1.8fr 1.4fr;
   height: 98vh;
   width: 98vw;
   border-radius: 2rem;

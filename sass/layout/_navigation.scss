@@ -1,5 +1,5 @@
 .navigation {
-  background-color: #fff;
+  background-color: $white;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -30,18 +30,22 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-
-
+    .container1 {
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      background-color: rgba($secondary, 1.5);
+      .navigation__links__home {
+        transform: scale(1.1);
+        stroke-width: 1.5px;
+      }
+    }
     &__svg {
       height: 3rem;
       width: 3rem;
       margin: 2rem 0;
       stroke-width: 1px;
       transition: all 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-      }
     }
 
     .container {
@@ -52,23 +56,18 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background-color: $secondary;
+        background-color: rgba($secondary, 0.6);
         .navigation__links__svg {
-          color: $primary;
+          transform: scale(1.1);
+          stroke-width: 1.5px;
         }
       }
     }
-
-    &__home,
     &__calender,
     &__users,
     &__clock,
     &__checkbox {
       transition: all 0.3s ease;
-
-      &:hover {
-        // color: $primary;
-      }
     }
   }
 

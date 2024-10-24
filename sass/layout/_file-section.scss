@@ -1,3 +1,21 @@
-.file-section{
-    
+.file-section {
+  // background-color: ;
+  &__logo {
+    height: 10.8rem;
+    display: flex;
+    flex-direction: column;
+    padding:0 3rem;
+    justify-content: center;
+    border-bottom: 1px solid #c8c8c8;
+    &__name {
+      line-height: 1.5;
+      font-size: x-large;
+      font-weight: 900;
+    }
+    &__subname {
+        line-height: 1.5;
+        font-size: small;
+        font-weight: 500;
+    }
+  }
 }
