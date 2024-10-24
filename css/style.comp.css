@@ -87,6 +87,12 @@
     font-size: small;
     font-weight: 500; }
 
+.file-section__file-directories {
+  margin-top: 3rem; }
+  .file-section__file-directories svg {
+    height: 3rem;
+    width: 3rem; }
+
 body {
   background-color: #F2EBE1; }
 
