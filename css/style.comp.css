@@ -71,6 +71,55 @@
       background-color: #373737;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
+.projects {
+  background-color: #FCFCFC;
+  padding: 2rem 4rem; }
+  .projects__date {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 1rem 0;
+    line-height: 1.5; }
+  .projects__searchBar {
+    margin: 1rem 0;
+    margin-bottom: 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    justify-content: start;
+    position: relative;
+    align-content: center;
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.2rem; }
+    .projects__searchBar__icon {
+      color: rgba(0, 0, 0, 0.4);
+      padding-right: 1rem;
+      font-size: 2rem; }
+    .projects__searchBar__input {
+      font-size: large;
+      width: 100%;
+      border: none; }
+      .projects__searchBar__input:active, .projects__searchBar__input:focus {
+        outline: none; }
+  .projects__showcase__heading {
+    display: flex;
+    font-size: 2rem; }
+    .projects__showcase__heading__name {
+      font-weight: 500; }
+    .projects__showcase__heading__view {
+      color: #f1925e;
+      cursor: pointer;
+      font-size: 1.8rem;
+      margin-left: auto; }
+  .projects__showcase__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; }
+    .projects__showcase__cards__1 {
+      padding: 0rem 2rem;
+      background-color: #FCBDA3; }
+    .projects__showcase__cards__2 {
+      background-color: #FCE5BC; }
+
 .file-section__logo {
   height: 10.8rem;
   display: flex;
@@ -80,7 +129,7 @@
   border-bottom: 1px solid #c8c8c8; }
   .file-section__logo__name {
     line-height: 1.5;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 900; }
   .file-section__logo__subname {
     line-height: 1.5;
@@ -88,10 +137,43 @@
     font-weight: 500; }
 
 .file-section__file-directories {
-  margin-top: 3rem; }
-  .file-section__file-directories svg {
-    height: 3rem;
-    width: 3rem; }
+  padding: 3rem 0; }
+  .file-section__file-directories__teams:hover .file-section__file-directories__teams__subdirectory {
+    max-height: 500px;
+    opacity: 1; }
+  .file-section__file-directories__teams__heading {
+    padding: 1rem 2rem;
+    align-items: center;
+    display: flex;
+    cursor: pointer; }
+    .file-section__file-directories__teams__heading:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
+      .file-section__file-directories__teams__heading:hover .file-section__file-directories__teams__heading__icon {
+        transform: rotate(-180deg); }
+    .file-section__file-directories__teams__heading__name {
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 1.8rem; }
+    .file-section__file-directories__teams__heading__icon {
+      height: 2rem;
+      width: 2rem;
+      margin-left: auto;
+      transition: all 0.5s; }
+  .file-section__file-directories__teams__subdirectory {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
+    margin: 0 4rem; }
+    .file-section__file-directories__teams__subdirectory__heading {
+      margin: 1.5rem 0;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: medium; }
+      .file-section__file-directories__teams__subdirectory__heading:last-child {
+        font-weight: 600; }
+      .file-section__file-directories__teams__subdirectory__heading:hover {
+        color: black; }
 
 body {
   background-color: #F2EBE1; }
@@ -104,8 +186,8 @@ body {
   display: grid;
   overflow: hidden;
   grid-template-columns: 0.1fr .6fr 1.8fr 1.4fr;
-  height: 98vh;
-  width: 98vw;
+  height: 95vh;
+  width: 95vw;
   border-radius: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
 

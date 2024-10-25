@@ -1,29 +1,86 @@
 .file-section {
-  // background-color: ;
   &__logo {
     height: 10.8rem;
     display: flex;
     flex-direction: column;
-    padding:0 3rem;
+    padding: 0 3rem;
     justify-content: center;
     border-bottom: 1px solid #c8c8c8;
+
     &__name {
       line-height: 1.5;
-      font-size: x-large;
+      font-size: xx-large;
       font-weight: 900;
     }
+
     &__subname {
-        line-height: 1.5;
-        font-size: small;
-        font-weight: 500;
+      line-height: 1.5;
+      font-size: small;
+      font-weight: 500;
     }
   }
-  &__file-directories{
-    svg{
-       height: 3rem;
-       width: 3rem; 
-    }
-    margin-top: 3rem;
 
+  &__file-directories {
+    padding: 3rem 0;
+
+    &__teams {
+      &:hover {
+        .file-section__file-directories__teams__subdirectory {
+          max-height: 500px; // Adjust max-height based on content size
+          opacity: 1;
+        }
+      }
+
+      &__heading {
+        padding: 1rem 2rem;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(#ffffff, 0.5);
+
+          .file-section__file-directories__teams__heading__icon {
+            transform: rotate(-180deg);
+          }
+        }
+
+        &__name {
+          font-weight: 600;
+          color: rgba(#000000, 0.7);
+          font-size:1.8rem;
+        }
+
+        &__icon {
+          height: 2rem;
+          width: 2rem;
+          margin-left: auto;
+          transition: all 0.5s; // Keep this at 0.5s for the icon rotation
+        }
+      }
+
+      &__subdirectory {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.7s ease, opacity 0.7s ease; // Increased duration and eased transition
+        margin: 0 4rem;
+
+        &__heading {
+          margin: 1.5rem 0;
+          cursor: pointer;
+          color: rgba(#000000, 0.7);
+
+          &:last-child {
+            font-weight: 600;
+          }
+
+          &:hover {
+            color: rgba(#000000, 1);
+          }
+
+          font-size: medium;
+        }
+      }
+    }
   }
 }

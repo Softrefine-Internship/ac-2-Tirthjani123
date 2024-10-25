@@ -1,0 +1,69 @@
+.projects {
+  background-color: $white;
+  padding: 2rem 4rem;
+  &__date {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+  &__searchBar {
+    margin: 1rem 0;
+    margin-bottom: 4rem;
+    border: 1px solid rgba($color: #000000, $alpha: 0.4);
+    justify-content: start;
+    position: relative;
+    align-content: center;
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+
+    &__icon {
+      color: rgba($color: #000000, $alpha: 0.4);
+      padding-right: 1rem;
+      font-size: 2rem;
+    }
+    &__input {
+      font-size: large;
+      width: 100%;
+      &:active,
+      &:focus {
+        // border: none;
+        outline: none;
+      }
+      border: none;
+    }
+  }
+  &__showcase {
+    &__heading {
+      display: flex;
+      font-size: 2rem;
+      &__name {
+        font-weight: 500;
+      }
+      &__view {
+        color: #f1925e;
+        cursor: pointer;
+        font-size: 1.8rem;
+        margin-left: auto;
+      }
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        &__1{
+            padding: 0rem 2rem;
+            background-color: #FCBDA3;
+
+            &__profiles{
+                
+            }
+        }
+        &__2{
+            background-color: #FCE5BC;
+        }
+    }
+  }
+}

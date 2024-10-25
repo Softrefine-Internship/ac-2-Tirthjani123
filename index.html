@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="css/style.comp.css" />
     <title>Dashboard</title>
   </head>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
   <body>
     <div class="dashboard">
       <nav class="navigation">
@@ -131,11 +139,12 @@
         </div>
         <div class="file-section__file-directories">
           <div class="file-section__file-directories__teams">
-            <span class="file-section__file-directories__teams__name"
-              >Teams</span
-            >
-            <span class="file-section__file-directories__teams__icon"
-              ><svg
+            <div class="file-section__file-directories__teams__heading">
+              <span class="file-section__file-directories__teams__heading__name"
+                >Teams</span
+              >
+              <svg
+                class="file-section__file-directories__teams__heading__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -147,21 +156,303 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  
                 />
               </svg>
-            </span>
+            </div>
+            <div class="file-section__file-directories__teams__subdirectory">
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Rajesh Kapoor
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Ramesh Popat
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Raju Rastoki
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Ranveer Allahbadiya
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Add new team member
+              </div>
+            </div>
           </div>
-          <div class="file-section__file-directories__projects"></div>
-          <div class="file-section__file-directories__tasks"></div>
-          <div class="file-section__file-directories__remainders"></div>
-          <div class="file-section__file-directories__messenger"></div>
+          <div class="file-section__file-directories__teams">
+            <div class="file-section__file-directories__teams__heading">
+              <span class="file-section__file-directories__teams__heading__name"
+                >Projects</span
+              >
+              <svg
+                class="file-section__file-directories__teams__heading__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="file-section__file-directories__teams__subdirectory">
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                All projects (4)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Design system
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Make unique design for customer
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                User Flow
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                UX research
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Add new project
+              </div>
+            </div>
+          </div>
+          <div class="file-section__file-directories__teams">
+            <div class="file-section__file-directories__teams__heading">
+              <span class="file-section__file-directories__teams__heading__name"
+                >Tasks</span
+              >
+              <svg
+                class="file-section__file-directories__teams__heading__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="file-section__file-directories__teams__subdirectory">
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                All tasks (3)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                New (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                In progress (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Done (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Add new task
+              </div>
+            </div>
+          </div>
+          <div class="file-section__file-directories__teams">
+            <div class="file-section__file-directories__teams__heading">
+              <span class="file-section__file-directories__teams__heading__name"
+                >Reminders</span
+              >
+              <svg
+                class="file-section__file-directories__teams__heading__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="file-section__file-directories__teams__subdirectory">
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                All tasks (3)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                New (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                In progress (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Done (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Add new task
+              </div>
+            </div>
+          </div>
+          <div class="file-section__file-directories__teams">
+            <div class="file-section__file-directories__teams__heading">
+              <span class="file-section__file-directories__teams__heading__name"
+                >Messenger</span
+              >
+              <svg
+                class="file-section__file-directories__teams__heading__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="file-section__file-directories__teams__subdirectory">
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                All tasks (3)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                New (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                In progress (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Done (1)
+              </div>
+              <div
+                class="file-section__file-directories__teams__subdirectory__heading"
+              >
+                Add new task
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="projects">
-        <div class="projects__date"></div>
-        <div class="projects__searchBar"></div>
-        <div class="projects__showcase"></div>
+        <div class="projects__date">Today, 4 Octomber</div>
+        <div class="projects__searchBar">
+          <ion-icon
+            class="projects__searchBar__icon"
+            name="search-outline"
+          ></ion-icon>
+          <input
+            type="text"
+            class="projects__searchBar__input"
+            placeholder="Search for..."
+          />
+        </div>
+        <div class="projects__showcase">
+          <div class="projects__showcase__heading">
+            <span class="projects__showcase__heading__name"
+              >Recent projects</span
+            >
+            <span class="projects__showcase__heading__view">View all</span>
+          </div>
+          <div class="projects__showcase__cards">
+            <div class="projects__showcase__cards__1">
+              <div class="projects__showcase__cards__1__heading">
+                <div
+                  class="projects__showcase__cards__1__heading__profiles"
+                ></div>
+                <div class="projects__showcase__cards__1__heading__menu"></div>
+              </div>
+              <div class="projects__showcase__cards__1__tittle">
+                Design system
+              </div>
+              <div class="projects__showcase__cards__1__subtittle">
+                Deadline: 18 Octomber
+              </div>
+              <div class="projects__showcase__cards__1__bottombar">
+                <div class="projects__showcase__cards__1__bottombar__tittle">
+                  84 hours / 40%
+                </div>
+                <div class="projects__showcase__cards__1__bottombar__bar"></div>
+              </div>
+            </div>
+            <div class="projects__showcase__cards__2">
+              <div class="projects__showcase__cards__1__heading">
+                <div
+                  class="projects__showcase__cards__1__heading__profiles"
+                ></div>
+                <div class="projects__showcase__cards__1__heading__menu"></div>
+              </div>
+              <div class="projects__showcase__cards__1__tittle">
+                Design system
+              </div>
+              <div class="projects__showcase__cards__1__subtittle">
+                Deadline: 18 Octomber
+              </div>
+              <div class="projects__showcase__cards__1__bottombar">
+                <div class="projects__showcase__cards__1__bottombar__tittle">
+                  84 hours / 40%
+                </div>
+                <div class="projects__showcase__cards__1__bottombar__bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="projects__remainder"></div>
       </div>
       <div class="details">
